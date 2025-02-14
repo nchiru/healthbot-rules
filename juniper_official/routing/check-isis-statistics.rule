@@ -589,11 +589,6 @@
                             }
                             products QFX {
                                 sensors isis-sensor;
-                                platforms QFX5110-48S {
-                                    releases 22.3R1 {
-                                        release-support min-supported-release;
-                                    }
-                                }
                             }
                         }
                         operating-system junosEvolved {
