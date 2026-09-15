@@ -49,7 +49,7 @@ healthbot {
                     path "/junos/system/subscriber-management/chassis/routing-engines/routing-engine/process-status/subscriber-management-processes/subscriber-management-process/cpu-utilization";
                 }
                 type "integer";
-                plots Subscriber management process CPU utilization {
+                plots subscriber-management-process-cpu-utilization {
                     unit "percent";
                 }
             }
@@ -73,7 +73,7 @@ healthbot {
                     path "/junos/system/subscriber-management/chassis/routing-engines/routing-engine/process-status/subscriber-management-processes/subscriber-management-process/memory-utilization";
                 }
                 type "integer";
-                plots Subscriber management process memory utilization {
+                plots subscriber-management-process-memory-utilization {
                     unit "percent";
                 }
             }
@@ -86,7 +86,7 @@ healthbot {
                     }
                 }
                 type "float";
-                plots Subscriber management process CPU utilization (1-hour average) {
+                plots subscriber-management-process-cpu-utilization-1-hour-average {
                     unit "percent";
                     triggers "process-cpu-high";
                 }
@@ -100,7 +100,7 @@ healthbot {
                     }
                 }
                 type "float";
-                plots Subscriber management process memory utilization (1-hour average) {
+                plots subscriber-management-process-memory-utilization-1-hour-average {
                     unit "percent";
                     triggers "process-memory-high";
                 }

@@ -27,7 +27,7 @@ healthbot {
                     path "/junos/system/subscriber-management/aaa/radius-servers/radius-server/statistics/server-last-rtt";
                 }
                 type "integer";
-                plots Server RTT {
+                plots server-rtt {
                     unit "ms";
                     triggers "radius-server-round-trip-time";
                 }
@@ -38,7 +38,7 @@ healthbot {
                     path "/junos/system/subscriber-management/aaa/radius-servers/radius-server/statistics/auth-access-requests";
                 }
                 type "integer";
-                plots Authentication access requests {
+                plots authentication-access-requests {
                     unit "requests";
                 }
             }
@@ -48,7 +48,7 @@ healthbot {
                     path "/junos/system/subscriber-management/aaa/radius-servers/radius-server/statistics/auth-retransmissions";
                 }
                 type "integer";
-                plots Authentication retransmissions {
+                plots authentication-retransmissions {
                     unit "count";
                 }
             }
@@ -58,7 +58,7 @@ healthbot {
                     path "/junos/system/subscriber-management/aaa/radius-servers/radius-server/statistics/auth-request-timeouts";
                 }
                 type "integer";
-                plots Authentication request timeouts {
+                plots authentication-request-timeouts {
                     unit "count";
                 }
             }
@@ -90,7 +90,7 @@ healthbot {
                     }
                 }
                 type "float";
-                plots Authentication retransmission percentage {
+                plots authentication-retransmission-percentage {
                     unit "percent";
                     triggers "radius-auth-retransmissions";
                 }
@@ -113,7 +113,7 @@ healthbot {
                     }
                 }
                 type "float";
-                plots Authentication request timeout percentage {
+                plots authentication-request-timeout-percentage {
                     unit "percent";
                     triggers "radius-auth-request-timeouts";
                 }
@@ -124,7 +124,7 @@ healthbot {
                     path "/junos/system/subscriber-management/aaa/radius-servers/radius-server/statistics/acct-retransmissions";
                 }
                 type "integer";
-                plots Accounting retransmissions {
+                plots accounting-retransmissions {
                     unit "count";
                 }
             }
@@ -134,7 +134,7 @@ healthbot {
                     path "/junos/system/subscriber-management/aaa/radius-servers/radius-server/statistics/acct-packets-dropped";
                 }
                 type "integer";
-                plots Accounting packets dropped {
+                plots accounting-packets-dropped {
                     unit "count";
                 }
             }
@@ -179,7 +179,7 @@ healthbot {
                     path "/junos/system/subscriber-management/aaa/radius-servers/radius-server/statistics/acct-start-requests";
                 }
                 type "integer";
-                plots Accounting Start requests sent {
+                plots accounting-start-requests-sent {
                     unit "requests";
                 }
             }
@@ -189,7 +189,7 @@ healthbot {
                     path "/junos/system/subscriber-management/aaa/radius-servers/radius-server/statistics/acct-interim-requests";
                 }
                 type "integer";
-                plots Accounting Interim requests sent {
+                plots accounting-interim-requests-sent {
                     unit "requests";
                 }
             }
@@ -199,7 +199,7 @@ healthbot {
                     path "/junos/system/subscriber-management/aaa/radius-servers/radius-server/statistics/acct-stop-requests";
                 }
                 type "integer";
-                plots Accounting Stop requests sent {
+                plots accounting-stop-requests-sent {
                     unit "requests";
                 }
             }
@@ -251,7 +251,7 @@ healthbot {
                     }
                 }
                 type "float";
-                plots Accounting packets dropped percentage {
+                plots accounting-packets-dropped-percentage {
                     unit "percent";
                     triggers "radius-acct-packets-dropped";
                 }
@@ -274,7 +274,7 @@ healthbot {
                     }
                 }
                 type "float";
-                plots Accounting retransmission percentage {
+                plots accounting-retransmission-percentage {
                     unit "percent";
                     triggers "radius-acct-retransmissions";
                 }

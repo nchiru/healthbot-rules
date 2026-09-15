@@ -18,7 +18,7 @@ healthbot {
                     path "/junos/system/subscriber-management/client-protocols/pppoe/statistics/era-reported-failures";
                 }
                 type "integer";
-                plots PPPoE ERA reported failures {
+                plots pppoe-era-reported-failures {
                     unit "events";
                     triggers "era-reported-failures";
                 }

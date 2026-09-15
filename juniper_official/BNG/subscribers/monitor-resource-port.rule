@@ -40,7 +40,7 @@ healthbot {
                     path "/junos/system/subscriber-management/infra/resource-monitor/fpcs/fpc/pics/pic/ports/port/current-subscriber-count";
                 }
                 type "integer";
-                plots Port current subscriber count {
+                plots port-current-subscriber-count {
                     unit "subscribers";
                 }
             }
@@ -50,7 +50,7 @@ healthbot {
                     path "/junos/system/subscriber-management/infra/resource-monitor/fpcs/fpc/pics/pic/ports/port/configured-subscriber-limit";
                 }
                 type "integer";
-                plots Port configured subscriber limit {
+                plots port-configured-subscriber-limit {
                     unit "subscribers";
                 }
             }
@@ -62,7 +62,7 @@ healthbot {
                     }
                 }
                 type "float";
-                plots Port subscriber limit utilization {
+                plots port-subscriber-limit-utilization {
                     unit "percent";
                     triggers "port-subscriber-limit-utilization";
                 }

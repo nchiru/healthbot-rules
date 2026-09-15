@@ -32,7 +32,7 @@ healthbot {
                     path "/junos/system/subscriber-management/aaa/diameter/clients/gx/cca-initial-failure";
                 }
                 type "integer";
-                plots GX CCA initial failure responses {
+                plots gx-cca-initial-failure-responses {
                     unit "responses";
                 }
             }
@@ -56,7 +56,7 @@ healthbot {
                     path "/junos/system/subscriber-management/aaa/diameter/clients/gx/cca-parse-error";
                 }
                 type "integer";
-                plots GX CCA parse errors {
+                plots gx-cca-parse-errors {
                     unit "responses";
                 }
             }
@@ -66,7 +66,7 @@ healthbot {
                     path "/junos/system/subscriber-management/aaa/diameter/clients/gx/cca-terminate-timeout";
                 }
                 type "integer";
-                plots GX CCA terminate timeout responses {
+                plots gx-cca-terminate-timeout-responses {
                     unit "responses";
                 }
             }
@@ -76,7 +76,7 @@ healthbot {
                     path "/junos/system/subscriber-management/aaa/diameter/clients/gx/ccr-initial";
                 }
                 type "integer";
-                plots GX CCR-Initial requests sent {
+                plots gx-ccr-initial-requests-sent {
                     unit "requests";
                 }
             }
@@ -169,7 +169,7 @@ healthbot {
                     }
                 }
                 type "float";
-                plots GX CCA initial failure percentage {
+                plots gx-cca-initial-failure-percentage {
                     unit "percent";
                     triggers "diameter-gx-failures";
                 }
@@ -182,7 +182,7 @@ healthbot {
                     }
                 }
                 type "float";
-                plots GX CCA parse error percentage {
+                plots gx-cca-parse-error-percentage {
                     unit "percent";
                     triggers "diameter-gx-parse-errors";
                 }
@@ -211,7 +211,7 @@ healthbot {
                     path "/junos/system/subscriber-management/aaa/diameter/clients/gx/ccr-terminate";
                 }
                 type "integer";
-                plots GX CCR-Terminate requests sent {
+                plots gx-ccr-terminate-requests-sent {
                     unit "requests";
                 }
             }
@@ -252,7 +252,7 @@ healthbot {
                     }
                 }
                 type "float";
-                plots GX CCA terminate timeout percentage {
+                plots gx-cca-terminate-timeout-percentage {
                     unit "percent";
                     triggers "diameter-gx-terminate-timeouts";
                 }

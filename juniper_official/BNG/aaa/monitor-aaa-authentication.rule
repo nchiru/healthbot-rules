@@ -32,7 +32,7 @@ healthbot {
                     path "/junos/system/subscriber-management/aaa/authentication-statistics/req-received";
                 }
                 type "integer";
-                plots Authentication requests received {
+                plots authentication-requests-received {
                     unit "requests";
                 }
             }
@@ -42,7 +42,7 @@ healthbot {
                     path "/junos/system/subscriber-management/aaa/authentication-statistics/req-timeout";
                 }
                 type "integer";
-                plots Authentication request timeouts {
+                plots authentication-request-timeouts {
                     unit "timeouts";
                 }
             }
@@ -74,7 +74,7 @@ healthbot {
                     }
                 }
                 type "float";
-                plots Authentication request timeout percentage {
+                plots authentication-request-timeout-percentage {
                     unit "percent";
                     triggers "authentication-request-timeouts";
                 }

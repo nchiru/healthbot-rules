@@ -56,7 +56,7 @@ healthbot {
                     path "/junos/system/subscriber-management/aaa/address-assignment-statistics/logical-system-routing-instances/logical-system-routing-instance/pools/pool/address-usage-percent";
                 }
                 type "integer";
-                plots Address pool utilization percent {
+                plots address-pool-utilization-percent {
                     unit "percent";
                     triggers "address-pool-utilization";
                 }

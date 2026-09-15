@@ -33,7 +33,7 @@ healthbot {
                     path "/junos/system/subscriber-management/infra/resource-monitor/fpcs/fpc/statistics/pfes/pfe/expansion-memory-used";
                 }
                 type "integer";
-                plots PFE expansion memory used {
+                plots pfe-expansion-memory-used {
                     unit "percent";
                     triggers "pfe-expansion-memory-utilization";
                 }
@@ -51,7 +51,7 @@ healthbot {
                     path "/junos/system/subscriber-management/infra/resource-monitor/fpcs/fpc/statistics/pfes/pfe/ifl-memory-used";
                 }
                 type "integer";
-                plots PFE ifl memory used {
+                plots pfe-ifl-memory-used {
                     unit "percent";
                     triggers "pfe-ifl-memory-utilization";
                 }

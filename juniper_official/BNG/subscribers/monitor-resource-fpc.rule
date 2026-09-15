@@ -26,7 +26,7 @@ healthbot {
                     path "/junos/system/subscriber-management/infra/resource-monitor/fpcs/fpc/statistics/client-session-denied-count";
                 }
                 type "integer";
-                plots FPC client sessions denied {
+                plots fpc-client-sessions-denied {
                     unit "events";
                     triggers "fpc-client-session-denied";
                 }
@@ -37,7 +37,7 @@ healthbot {
                     path "/junos/system/subscriber-management/infra/resource-monitor/fpcs/fpc/statistics/current-subscriber-count";
                 }
                 type "integer";
-                plots FPC current subscriber count {
+                plots fpc-current-subscriber-count {
                     unit "subscribers";
                 }
             }
@@ -47,7 +47,7 @@ healthbot {
                     path "/junos/system/subscriber-management/infra/resource-monitor/fpcs/fpc/statistics/configured-subscriber-limit";
                 }
                 type "integer";
-                plots FPC configured subscriber limit {
+                plots fpc-configured-subscriber-limit {
                     unit "subscribers";
                 }
             }
@@ -59,7 +59,7 @@ healthbot {
                     }
                 }
                 type "float";
-                plots FPC subscriber limit utilization {
+                plots fpc-subscriber-limit-utilization {
                     unit "percent";
                     triggers "fpc-subscriber-limit-utilization";
                 }
@@ -84,7 +84,7 @@ healthbot {
                     path "/junos/system/subscriber-management/infra/resource-monitor/fpcs/fpc/statistics/heap-memory-used";
                 }
                 type "integer";
-                plots FPC heap memory used {
+                plots fpc-heap-memory-used {
                     unit "percent";
                     triggers "fpc-heap-memory-utilization";
                 }

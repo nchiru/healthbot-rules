@@ -35,7 +35,7 @@ healthbot {
                     path "/junos/system/subscriber-management/client-protocols/dhcp/v6/routing-instances/routing-instance/relay/servers/server/response-time/one-minute-average-response-time";
                 }
                 type "integer";
-                plots DHCPv6 relay server average response time {
+                plots dhcpv6-relay-server-average-response-time {
                     unit "ms";
                     triggers "dhcpv6-relay-server-response-time";
                 }
@@ -46,7 +46,7 @@ healthbot {
                     path "/junos/system/subscriber-management/client-protocols/dhcp/v6/routing-instances/routing-instance/relay/servers/server/response-time/one-minute-messages-no-response";
                 }
                 type "integer";
-                plots DHCPv6 relay server no response messages {
+                plots dhcpv6-relay-server-no-response-messages {
                     unit "events";
                 }
             }
@@ -84,7 +84,7 @@ healthbot {
                     path "/junos/system/subscriber-management/client-protocols/dhcp/v6/routing-instances/routing-instance/relay/servers/server/response-time/one-minute-messages-sent";
                 }
                 type "integer";
-                plots DHCPv6 relay server messages sent {
+                plots dhcpv6-relay-server-messages-sent {
                     unit "count";
                 }
             }
@@ -96,7 +96,7 @@ healthbot {
                     }
                 }
                 type "float";
-                plots DHCPv6 relay server no-response percentage {
+                plots dhcpv6-relay-server-no-response-percentage {
                     unit "percent";
                     triggers "dhcpv6-relay-server-no-response";
                 }

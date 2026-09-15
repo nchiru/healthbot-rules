@@ -27,7 +27,7 @@ healthbot {
                     path "/junos/system/subscriber-management/client-protocols/dhcp/v4/routing-instances/routing-instance/server/statistics/dropped-v4server-total";
                 }
                 type "integer";
-                plots DHCPv4 server total drops {
+                plots dhcpv4-server-total-drops {
                     unit "events";
                 }
             }
@@ -37,7 +37,7 @@ healthbot {
                     path "/junos/system/subscriber-management/client-protocols/dhcp/v4/routing-instances/routing-instance/server/statistics/msg-recv-v4server-discover";
                 }
                 type "integer";
-                plots DHCPv4 server total discovers {
+                plots dhcpv4-server-total-discovers {
                     unit "count";
                 }
             }
@@ -47,7 +47,7 @@ healthbot {
                     path "/junos/system/subscriber-management/client-protocols/dhcp/v4/routing-instances/routing-instance/relay/statistics/dropped-v4relay-total";
                 }
                 type "integer";
-                plots DHCPv4 relay total drops {
+                plots dhcpv4-relay-total-drops {
                     unit "events";
                 }
             }
@@ -57,7 +57,7 @@ healthbot {
                     path "/junos/system/subscriber-management/client-protocols/dhcp/v4/routing-instances/routing-instance/relay/statistics/v4relay-bootp-request-rcvd";
                 }
                 type "integer";
-                plots DHCPv4 relay total requests {
+                plots dhcpv4-relay-total-requests {
                     unit "count";
                 }
             }
@@ -89,7 +89,7 @@ healthbot {
                     }
                 }
                 type "float";
-                plots DHCPv4 server drop percentage {
+                plots dhcpv4-server-drop-percentage {
                     unit "percent";
                     triggers "v4-server-dropped-total";
                 }
@@ -122,7 +122,7 @@ healthbot {
                     }
                 }
                 type "float";
-                plots DHCPv4 relay drop percentage {
+                plots dhcpv4-relay-drop-percentage {
                     unit "percent";
                     triggers "v4-relay-dropped-total";
                 }

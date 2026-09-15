@@ -27,7 +27,7 @@ healthbot {
                     path "/junos/system/subscriber-management/client-protocols/dhcp/v6/routing-instances/routing-instance/server/statistics/dropped-v6server-total";
                 }
                 type "integer";
-                plots DHCPv6 server total drops {
+                plots dhcpv6-server-total-drops {
                     unit "events";
                 }
             }
@@ -37,7 +37,7 @@ healthbot {
                     path "/junos/system/subscriber-management/client-protocols/dhcp/v6/routing-instances/routing-instance/server/statistics/msg-recv-v6server-dhcpv6-solicit";
                 }
                 type "integer";
-                plots DHCPv6 server SOLICIT messages received {
+                plots dhcpv6-server-solicit-messages-received {
                     unit "count";
                 }
             }
@@ -47,7 +47,7 @@ healthbot {
                     path "/junos/system/subscriber-management/client-protocols/dhcp/v6/routing-instances/routing-instance/relay/statistics/dropped-v6relay-total";
                 }
                 type "integer";
-                plots DHCPv6 relay total drops {
+                plots dhcpv6-relay-total-drops {
                     unit "events";
                 }
             }
@@ -57,7 +57,7 @@ healthbot {
                     path "/junos/system/subscriber-management/client-protocols/dhcp/v6/routing-instances/routing-instance/relay/statistics/msg-recv-v6relay-solicit";
                 }
                 type "integer";
-                plots DHCPv6 relay SOLICIT messages received {
+                plots dhcpv6-relay-solicit-messages-received {
                     unit "count";
                 }
             }
@@ -89,7 +89,7 @@ healthbot {
                     }
                 }
                 type "float";
-                plots DHCPv6 server drop percentage {
+                plots dhcpv6-server-drop-percentage {
                     unit "percent";
                     triggers "dhcpv6-server-total-drops";
                 }
@@ -122,7 +122,7 @@ healthbot {
                     }
                 }
                 type "float";
-                plots DHCPv6 relay drop percentage {
+                plots dhcpv6-relay-drop-percentage {
                     unit "percent";
                     triggers "dhcpv6-relay-total-drops";
                 }

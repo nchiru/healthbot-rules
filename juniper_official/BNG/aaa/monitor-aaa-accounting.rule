@@ -32,7 +32,7 @@ healthbot {
                     path "/junos/system/subscriber-management/aaa/accounting-statistics/acct-req-timeout";
                 }
                 type "integer";
-                plots Accounting request timeouts {
+                plots accounting-request-timeouts {
                     unit "timeouts";
                 }
             }
@@ -42,7 +42,7 @@ healthbot {
                     path "/junos/system/subscriber-management/aaa/accounting-statistics/acct-req-received";
                 }
                 type "integer";
-                plots Accounting requests received {
+                plots accounting-requests-received {
                     unit "requests";
                 }
             }
@@ -74,7 +74,7 @@ healthbot {
                     }
                 }
                 type "float";
-                plots Accounting request timeout percentage {
+                plots accounting-request-timeout-percentage {
                     unit "percent";
                     triggers "aaa-accounting-request-timeouts";
                 }

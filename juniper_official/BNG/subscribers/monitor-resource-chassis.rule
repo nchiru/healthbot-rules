@@ -18,7 +18,7 @@ healthbot {
                     path "/junos/system/subscriber-management/infra/resource-monitor/chassis/current-subscriber-count";
                 }
                 type "integer";
-                plots Chassis current subscriber count {
+                plots chassis-current-subscriber-count {
                     unit "subscribers";
                 }
             }
@@ -28,7 +28,7 @@ healthbot {
                     path "/junos/system/subscriber-management/infra/resource-monitor/chassis/configured-subscriber-limit";
                 }
                 type "integer";
-                plots Chassis configured subscriber limit {
+                plots chassis-configured-subscriber-limit {
                     unit "subscribers";
                 }
             }
@@ -40,7 +40,7 @@ healthbot {
                     }
                 }
                 type "float";
-                plots Chassis subscriber limit utilization {
+                plots chassis-subscriber-limit-utilization {
                     unit "percent";
                     triggers "chassis-subscriber-limit-utilization";
                 }
