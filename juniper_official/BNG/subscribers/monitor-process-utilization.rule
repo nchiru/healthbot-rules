@@ -212,6 +212,7 @@ healthbot {
                 }
             }
             rule-properties {
+                domain-name bng.chassis-process;
                 supported-devices {
                     juniper {
                         operating-system junos {

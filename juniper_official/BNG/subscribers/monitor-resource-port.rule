@@ -141,6 +141,7 @@ healthbot {
                 }
             }
             rule-properties {
+                domain-name bng.resource-utilization;
                 supported-devices {
                     juniper {
                         operating-system junos {

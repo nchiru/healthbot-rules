@@ -625,6 +625,7 @@ healthbot {
                 }
             }
             rule-properties {
+                domain-name bng.radius-server;
                 supported-devices {
                     juniper {
                         operating-system junos {

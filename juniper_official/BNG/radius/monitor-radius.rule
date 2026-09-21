@@ -73,6 +73,7 @@ healthbot {
                 value ".*";
             }
             trigger radius-server-rejects-responses {
+                alert-type "bng.accounting-performance.radius.server-rejects"
                 description "Alert when RADIUS Server rejects exceed the threshold";
                 synopsis "Alert when RADIUS Server rejects exceed the threshold";
                 term is-unhealthy-rejects {
@@ -96,6 +97,7 @@ healthbot {
                 }
             }
             trigger radius-server-accepts-responses {
+                alert-type "bng.accounting-performance.radius.server-accepts"
                 description "Alert when RADIUS Server accepts exceed the threshold";
                 synopsis "Alert when RADIUS Server accepts exceed the threshold";
                 term is-unhealthy-accepts {
@@ -119,6 +121,7 @@ healthbot {
                 }
             }
             rule-properties {
+                domain-name bng.radius-server;
                 supported-devices {
                     juniper {
                         operating-system junos {

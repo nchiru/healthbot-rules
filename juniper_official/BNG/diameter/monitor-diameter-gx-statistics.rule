@@ -452,6 +452,7 @@ healthbot {
                 }
             }
             rule-properties {
+                domain-name bng.diameter;
                 supported-devices {
                     juniper {
                         operating-system junos {

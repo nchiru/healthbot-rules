@@ -138,6 +138,7 @@ healthbot {
                 }
             }
             rule-properties {
+                domain-name bng.address-pool-utilization;
                 supported-devices {
                     juniper {
                         operating-system junos {

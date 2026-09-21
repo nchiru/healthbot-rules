@@ -149,6 +149,7 @@ healthbot {
                 }
             }
             rule-properties {
+                domain-name bng.authentication;
                 supported-devices {
                     juniper {
                         operating-system junos {

@@ -149,6 +149,7 @@ healthbot {
                 }
             }
             rule-properties {
+                domain-name bng.accounting;
                 supported-devices {
                     juniper {
                         operating-system junos {

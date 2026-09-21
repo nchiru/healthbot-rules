@@ -63,6 +63,7 @@ healthbot {
                 }
             }
             rule-properties {
+                domain-name bng.pppoe;
                 supported-devices {
                     juniper {
                         operating-system junos {

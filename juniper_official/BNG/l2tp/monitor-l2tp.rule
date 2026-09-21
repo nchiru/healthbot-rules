@@ -40,6 +40,7 @@ healthbot {
                 type "integer";
             }
             trigger l2tp-tunnels-count {
+                alert-type bng.subscriber-resource-utilization.l2tp.tunnels-counts
                 description "Sets health based on tunnels count";
                 synopsis "L2TP tunnels count KPI";
                 term is-l2tp-tunnels-count-normal {
@@ -63,6 +64,7 @@ healthbot {
                 }
             }
             rule-properties {
+                domain-name bng.l2tp;
                 supported-devices {
                     juniper {
                         operating-system junos {

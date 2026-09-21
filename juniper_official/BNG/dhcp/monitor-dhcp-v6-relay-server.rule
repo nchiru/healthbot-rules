@@ -220,6 +220,7 @@ healthbot {
                 }
             }
             rule-properties {
+                domain-name bng.dhcpv6-server;
                 supported-devices {
                     juniper {
                         operating-system junos {
