@@ -80,7 +80,7 @@ healthbot {
                 value "100";
             }
             trigger sched-block-cos-queue-utilization {
-                alert-type "bng.subscriber-resource-utilization.sched-block-cos-queue-utilization";
+                alert-type "bng.subscriber-resource-utilization.sched-block.cos-queue-utilization";
                 description "Alert when the CoS queue fill percent reaches the configured threshold (single tier)";
                 synopsis "Alert when the CoS queue fill percent reaches the configured threshold";
                 term is-no-capacity {
