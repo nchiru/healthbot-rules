@@ -136,7 +136,7 @@ healthbot {
                 value "75";
             }
             trigger process-cpu-high {
-                alert-type "bng.system-resource-health.process-cpu-utilization";
+                alert-type "bng.system-resource-health.process.cpu-utilization";
                 description "Alert when the 1-hour average process CPU utilization exceeds a threshold";
                 synopsis "Alert when the 1-hour average process CPU utilization exceeds a threshold";
                 term is-healthy {
@@ -174,7 +174,7 @@ healthbot {
                 }
             }
             trigger process-memory-high {
-                alert-type "bng.system-resource-health.process-memory-utilization";
+                alert-type "bng.system-resource-health.process.memory-utilization";
                 description "Alert when the 1-hour average process memory utilization exceeds a threshold";
                 synopsis "Alert when the 1-hour average process memory utilization exceeds a threshold";
                 term is-healthy {
