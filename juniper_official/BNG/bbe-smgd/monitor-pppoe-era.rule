@@ -41,7 +41,11 @@ healthbot {
                 synopsis "Alert when era-reported-failures grows abnormally fast between consecutive evaluations";
                 term is-healthy {
                     when {
-                        increasing-at-most-by-value "$era-reported-failures" "$era-reported-failures-critical-threshold";
+                        increasing-at-most-by-value "$era-reported-failures" {
+                            value "$era-reported-failures-critical-threshold";
+                            time-range 2.5offset;
+                            latest;
+                        }
                     }
                     then {
                         status {
@@ -52,7 +56,11 @@ healthbot {
                 }
                 term is-critical {
                     when {
-                        increasing-at-least-by-value "$era-reported-failures" "$era-reported-failures-critical-threshold";
+                        increasing-at-least-by-value "$era-reported-failures" {
+                            value "$era-reported-failures-critical-threshold";
+                            time-range 2.5offset;
+                            latest;
+                        }
                     }
                     then {
                         status {
